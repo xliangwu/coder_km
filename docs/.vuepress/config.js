@@ -26,7 +26,8 @@ module.exports = {
         nav: [
             { text: '主页', link: '/' },
             ...nav,
-            { text: '博客', link: 'http://obkoro1.com/' },
+            { text: '博客', link: 'http://blog.nowcode.cn/' },
+            { text: '关于我', link: '/about' },
             {
                 text: 'GitHub',
                 items: [
