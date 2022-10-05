@@ -1,0 +1,24 @@
+{
+    "name": "coder_km",
+    "version": "0.0.1",
+    "description": "coder pages",
+    "main": "index.js",
+    "repository": "https://github.com/xliangwu/coder_km.git",
+    "author": "xw80329 <xliangwu@gmail.com>",
+    "license": "Apache",
+    "devDependencies": {
+        "@vuepress/plugin-active-header-links": "^1.9.7",
+        "@vuepress/plugin-back-to-top": "^1.9.7",
+        "@vuepress/plugin-search": "^1.9.7",
+        "transliteration": "^2.3.5",
+        "vuepress": "^1.9.7",
+        "vuepress-bar": "^0.4.4",
+        "vuepress-plugin-autobar": "boboidream/vuepress-bar",
+        "vuepress-plugin-permalink-pinyin": "^1.1.0",
+        "vuepress-plugin-rpurl": "^1.0.2"
+    },
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    }
+}
