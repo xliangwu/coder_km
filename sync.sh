@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /home/xw80329/apps/coder_km
 echo "$(date) [INFO] sync data from github"
 git pull
 
