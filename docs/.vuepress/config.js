@@ -30,9 +30,7 @@ module.exports = {
             { text: '关于我', link: '/about' },
             {
                 text: 'GitHub',
-                items: [
-                    { text: 'GitHub', link: 'https://github.com/xliangwu/coder_km' }
-                ]
+                link: 'https://github.com/xliangwu/coder_km'
             },
         ],
         sidebar
