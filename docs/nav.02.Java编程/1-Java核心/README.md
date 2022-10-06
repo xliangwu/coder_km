@@ -1,7 +1,10 @@
-# Java 编程
+# java 核心编程
+
+::: tip
+任何技能通过 “刻意练习” 都可以达到融会贯通的境界，就像烹饪一样，这里有一份JAVA开发技术手册，只需要增加自己练习的次数。
+:::
 
 
-## 1.java 核心编程
 - Java 基础概念
 　　基本概念、面向对象、关键字、基本数据类型与运算、字符串与数组、异常处理、Object 通用方法
 
@@ -22,34 +25,3 @@
 
 - Java Web
 　　包含 Servlet & JSP、Spring、SpringMVC、Mybatis、Hibernate核心思想，如 IOC、AOP 等思想。SSM 更详细请转向：Spring 家族
-
-## 2.Elasticsearch
-- Elasticsearch
-- kibana
-- 分词
-
-## 3.分布式缓存
-- Redis
-- Google Guava 内存缓存
-
-## 4.算法
-- 排序算法
-- 动态规划
-- 递归
-- 回溯法
-- 贪心算法
-
-## 5.Spring家族
-- SpringCore
-- SpringBoot
-- SpringMVC
-- Spring Batch
-- Spring Integeration
-- Spring Mybatis
-- Spring Security
-
-## 6.微服务
-- Nacos
-- SpringCloud Alibaba
-- Sentinel
-- Spring Gateway

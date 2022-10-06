@@ -11,18 +11,30 @@ module.exports = {
     markdown: {
         lineNumbers: true
     },
+    plugins: [
+        ['@vuepress/back-to-top', true],
+        ['@vuepress/medium-zoom', {
+            selector: '.theme-default-content :not(a) > img',
+            // medium-zoom options here
+            // See: https://github.com/francoischalifour/medium-zoom#options
+            options: {
+                margin: 16,
+                scrollOffset: 50,
+            }
+        }],
+        ['@vuepress/active-header-links', {
+            sidebarLinkSelector: '.sidebar-link',
+            headerAnchorSelector: '.header-anchor'
+        }],
+        ['@vuepress/search', {
+            searchMaxSuggestions: 10,
+            search: true,
+        }],
+    ],
     themeConfig: {
         logo: '/images/code.png',
+        lastUpdated: 'Last Updated',
         sidebarDepth: 2,
-        plugins: [
-            ['autobar', { 'pinyinNav': true, "maxLevel": 2 }],
-            ['permalink-pinyin'],
-            ["rpurl"],
-            ['@vuepress/back-to-top'],
-            ['@vuepress/search', {
-                searchMaxSuggestions: 10
-            }],
-        ],
         nav: [
             { text: '主页', link: '/' },
             ...nav,
