@@ -1,4 +1,4 @@
-# 2. OpenResty开发环境构建
+# 1. OpenResty开发环境构建
 
 
 ## Dockerfile
