@@ -53,3 +53,6 @@ http {
 }
 
 ```
+
+# 测试
+curl http://localhost:28004/api
