@@ -54,5 +54,30 @@ http {
 
 ```
 
+## 源代码
+```lua
+--request header
+local headers = ngx.req.get_headers()
+ngx.say("headers begin", "<br/>")
+ngx.say("Host : ", headers["Host"], "<br/>")
+ngx.say("user-agent : ", headers["user-agent"], "<br/>")
+ngx.say("user-agent : ", headers.user_agent, "<br/>")
+
+
+-- local ok, md5_or_err = ngx.run_worker_thread("default_pool", "md5", "md5")
+-- ok, md5_or_err = ngx.run_worker_thread("default_pool", "md5", "md5")
+-- ngx.say(ok, " : ", md5_or_err)
+
+-- ok, md5_or_err = ngx.run_worker_thread("default_pool", "md5", "md5")
+-- ngx.say(ok, " : ", md5_or_err)
+
+ngx.sleep(20)
+ngx.say('ok')
+
+-- end header
+ngx.say("post args end", "<br/>")
+ngx.say("<br/>")
+```
+
 # 测试
 curl http://localhost:28004/api
