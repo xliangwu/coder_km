@@ -1,8 +1,3 @@
----
-home: true
-footer: Apache License 2.0 | Copyright © 2022 by xueliang.wu
----
-
 ::: tip
 大家好，欢迎来到这里，里边主要是我的学习笔记和经验总结，希望能给大家带来一些帮助!
 :::
