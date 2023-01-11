@@ -1,0 +1,125 @@
+#01.ThreadPoolTaskExecutor参数详解
+
+## ThreadPoolTaskExecutor参数详解
+```xml
+<bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+    <!-- 线程池维护线程的最少数量，即使没有任务需要执行，也会一直存活 -->
+    <!-- 设置allowCoreThreadTimeout=true（默认false）时，核心线程会超时关闭 -->
+    <property name="corePoolSize" value="5"/>
+    
+    <!-- 允许的空闲时间，当线程空闲时间达到keepAliveTime时，线程会退出，直到线程数量=corePoolSize -->
+    <!-- 如果allowCoreThreadTimeout=true，则会直到线程数量=0 -->
+	<property name="keepAliveSeconds" value="200"/>
+    
+    <!-- 线程池维护线程的最大数量 -->
+    <!-- 当线程数>=corePoolSize，且任务队列已满时。线程池会创建新线程来处理任务 -->
+    <!-- 当线程数=maxPoolSize，且任务队列已满时，线程池会拒绝处理任务而抛出异常，异常见下文 -->
+	<property name="maxPoolSize" value="10"/>
+	
+    <!-- 缓存队列（阻塞队列）当核心线程数达到最大时，新任务会放在队列中排队等待执行 -->
+	<property name="queueCapacity" value="20"/>
+	
+    <!-- 对拒绝task的处理策略 -->
+    <property name="rejectedExecutionHandler">
+        <bean class="java.util.concurrent.ThreadPoolExecutor$AbortPolicy" />
+    </property>
+</bean>
+
+```
+执行任务时，通过下面源代码可以得出以下结论
+如果线程池中线程数量 < 核心线程数，新建一个线程执行任务；
+如果线程池中线程数量 >= 核心线程数,则将任务放入任务队列
+如果线程池中线程数量 >= 核心线程数 且 < maxPoolSize，且任务队列满了，则创建新的线程；
+如果线程池中线程数量 > 核心线程数,当线程空闲时间超过了keepalive时，则会销毁线程；由此可见线程池的队列如果是无界队列，那么设置线程池最大数量是无效的；
+如果线程池中的任务队列满了，而且线程数达到了maxPoolSize，并且没有空闲的线程可以执行新的任务，这时候再提交任务就会执行拒绝策略
+
+```java
+    //添加新任务
+    public void execute(Runnable command) {
+        //如果任务为null直接抛出异常
+        if (command == null)
+            throw new NullPointerException();
+        //ctl.get()它记录了当前线程池的运行状态和线程池内的线程数；一个变量是怎么记录两个值的呢？
+        	//它是一个AtomicInteger 类型，有32个字节，这个32个字节中，高3位用来标识线程池的运行状态，
+        	//低29位用来标识线程池内当前存在的线程数；
+        int c = ctl.get();
+
+        //如果当前线程数小于核心线程数，这时候任务不会进入任务队列，会创建新的工作线程直接执行任务；
+        if (workerCountOf(c) < corePoolSize) { 
+            //添加新的工作线程执行任务，addWorker方法后面分析
+            if (addWorker(command, true))
+                return;
+            //addWorker操作返回false，说明添加新的工作线程失败，则获取当前线程池状态；（线程池数量小于corePoolSize情况下，
+            //创建新的工作线程失败，是因为线程池的状态发生了改变，已经处于非Running状态，或shutdown状态且任务队列为空）
+            c = ctl.get();
+        }
+
+        //以下两种情况继续执行后面代码
+        //1.前面的判断中，线程池中线程数小于核心线程数，并且创建新的工作线程失败；
+        //2.前面的判断中，线程池中线程数大于等于核心线程数
+
+        //线程池处于RUNNING状态，说明线程池中线程已经>=corePoolSize,这时候要将任务放入队列中，等待执行;
+        if (isRunning(c) && workQueue.offer(command)) {
+            int recheck = ctl.get();
+            //再次检查线程池的状态，如果线程池状态变了，非RUNNING状态下不会接收新的任务，需要将任务移除，
+           	  //成功从队列中删除任务，则执行reject方法处理任务；
+            if (! isRunning(recheck) && remove(command))
+                reject(command);
+            else if (workerCountOf(recheck) == 0)//如果线程池的状态没有改变，且池中无线程
+            // 两种情况进入以该分支
+            //1.线程池处于RUNNING状态，线程池中没有线程了，因为有新任务进入队列所以要创建工作线程（这时候新任务已经在队列
+           		 //中，所以下面创建worker线程时第一个参数，要执行的任务为null，只是创建一个新的工作线程并启动它，
+            	 //让它自己去队列中取任务执行）
+            //2.线程池处于非RUNNING状态但是任务移除失败,导致任务队列中仍然有任务，但是线程池中的线程数为0，
+            	 //则创建新的工作线程，处理队列中的任务；
+                addWorker(null, false);
+        // 两种情况执行下面分支：
+        // 1.非RUNNING状态拒绝新的任务,并且无法创建新的线程，则拒绝任务
+        // 2.线程池处于RUNNING状态，线程池线程数量已经大于等于coresize，任务就需要放入队列，如果任务入队失败，
+        	  //说明队列满了，则创建新的线程，创建成功则新线程继续执行任务，如果创建失败说明线程池中线程数已经超过	
+        	  //maximumPoolSize，则拒绝任务
+        }else if (!addWorker(command, false))
+            reject(command);
+    }
+```
+
+## 拒绝策略详解
+1. AbortPolicy
+该策略是线程池的默认策略。使用该策略时，如果线程池队列满了丢掉这个任务并且抛出RejectedExecutionException异常。
+
+2. DiscardPolicy
+这个策略和AbortPolicy的slient版本，如果线程池队列满了，会直接丢掉这个任务并且不会有任何异常。
+
+3. DiscardOldestPolicy
+这个策略从字面上也很好理解，丢弃最老的。也就是说如果队列满了，会将最早进入队列的任务删掉腾出空间，再尝试加入队列。
+因为队列是队尾进，队头出，所以队头元素是最老的，因此每次都是移除对头元素后再尝试入队。
+```java
+public static class DiscardOldestPolicy implements RejectedExecutionHandler {
+        /**
+         * Creates a {@code DiscardOldestPolicy} for the given executor.
+         */
+        public DiscardOldestPolicy() { }
+
+        /**
+         * Obtains and ignores the next task that the executor
+         * would otherwise execute, if one is immediately available,
+         * and then retries execution of task r, unless the executor
+         * is shut down, in which case task r is instead discarded.
+         *
+         * @param r the runnable task requested to be executed
+         * @param e the executor attempting to execute this task
+         */
+        public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
+            if (!e.isShutdown()) {
+                e.getQueue().poll();
+                e.execute(r);
+            }
+        }
+    }
+```
+
+4. CallerRunsPolicy
+使用此策略，如果添加到线程池失败，那么主线程会自己去执行该任务，不会等待线程池中的线程去执行。就像是个急脾气的人，我等不到别人来做这件事就干脆自己干。
+
+5. 自定义
+实现接口RejectedExecutionHandler
