@@ -85,9 +85,11 @@
 
 ## 拒绝策略详解
 1. AbortPolicy
+
 该策略是线程池的默认策略。使用该策略时，如果线程池队列满了丢掉这个任务并且抛出RejectedExecutionException异常。
 
 2. DiscardPolicy
+
 这个策略和AbortPolicy的slient版本，如果线程池队列满了，会直接丢掉这个任务并且不会有任何异常。
 
 3. DiscardOldestPolicy
@@ -119,7 +121,9 @@ public static class DiscardOldestPolicy implements RejectedExecutionHandler {
 ```
 
 4. CallerRunsPolicy
+
 使用此策略，如果添加到线程池失败，那么主线程会自己去执行该任务，不会等待线程池中的线程去执行。就像是个急脾气的人，我等不到别人来做这件事就干脆自己干。
 
 5. 自定义
+
 实现接口RejectedExecutionHandler
