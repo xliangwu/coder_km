@@ -6,5 +6,11 @@
 - xliang.wu@gmail.com
 - maoanapex88@163.com
 
+# 工作经历
+1. [苏州青河科技有限公司](http://www.qinghetech.com/)
+2. [花旗银行](https://www.citi.com/)
+3. [和合信诺大数据科技有限公司](http://www.hexasino.com/)
+4. [思必驰](https://www.aispeech.com/)
+
 # Github
 [Github](https://github.com/xliangwu)
