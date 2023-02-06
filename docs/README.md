@@ -19,7 +19,7 @@ actionLink: /nav.01.Linux知识/
 :::
 
 ---
-## 历史技术文章
+## 历史文章
 [2021年之前的技术文章](http://blog.nowcode.cn/)
 
 
