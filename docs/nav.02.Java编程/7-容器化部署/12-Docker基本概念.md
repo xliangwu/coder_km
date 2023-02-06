@@ -1,4 +1,4 @@
-# 3.Docker 基本概念
+# 12.Docker 基本概念
 Docker 包括三个基本概念
 - 镜像（Image）
 - 容器（Container）
@@ -41,3 +41,22 @@ Docker Registry 公开服务是开放给用户使用、允许用户管理镜像�
 除了使用公开服务外，用户还可以在本地搭建私有 Docker Registry。Docker 官方提供了 Docker Registry 镜像，可以直接使用做为私有 Registry 服务。在 私有仓库 一节中，会有进一步的搭建私有 Registry 服务的讲解。
 开源的 Docker Registry 镜像只提供了 Docker Registry API 的服务端实现，足以支持 docker 命令，不影响使用。但不包含图形界面，以及镜像维护、用户管理、访问控制等高级功能。
 除了官方的 Docker Registry 外，还有第三方软件实现了 Docker Registry API，甚至提供了用户界面以及一些高级功能。比如，Harbor 和 Sonatype Nexus。
+
+## 参考资料
+
+- 官方英文资源
+1. [Docker官网](http://www.docker.com)
+2. [Docker windows入门](https://docs.docker.com/windows/)
+3. [Docker Linux 入门](https://docs.docker.com/linux/)
+4. [Docker mac 入门](https://docs.docker.com/mac/)
+5. [Docker 用户指引](https://docs.docker.com/engine/userguide/)
+6. [Docker 官方博客](http://blog.docker.com/)
+7. [Docker Hub: https://hub.docker.com/)
+8. [Docker开源]( https://www.docker.com/open-source)
+
+- 中文资源
+1. [Docker中文网站](http://www.docker.org.cn)
+2. [Docker中文文档](http://www.dockerinfo.net/document)
+3. [Docker安装手册](http://www.docker.org.cn/book/install.html)
+4. [一小时Docker教程 ](https://blog.csphere.cn/archives/22)
+5. [Docker中文指南](http://www.widuu.com/chinese_docker/index.html)

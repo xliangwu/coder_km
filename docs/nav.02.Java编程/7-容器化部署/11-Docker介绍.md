@@ -1,4 +1,4 @@
-# 1.Docker 介绍
+# 11.Docker入门介绍
 
 ## 什么是 Docker
     Docker 最初是 dotCloud 公司创始人 Solomon Hykes 在法国期间发起的一个公司内部项目，它是基于 dotCloud 公司多年云服务技术的一次革新，并于 2013 年 3 月以 Apache 2.0 授权协议开源，主要项目代码在 GitHub 上进行维护。Docker 项目后来还加入了 Linux 基金会，并成立推动 开放容器联盟（OCI）。
@@ -47,3 +47,22 @@ You have new mail in /var/spool/mail/root
 [root@localhost /] docker restart
 [root@localhost /] docker stop
 ```
+
+## Hello Word
+> 简单的hello word来熟悉docker的用法
+```bash
+runoob@runoob:~$ docker run ubuntu:15.10 /bin/echo "Hello world"
+Hello world
+```
+各个参数解析：
+
+docker: Docker 的二进制执行文件。
+
+run: 与前面的 docker 组合来运行一个容器。
+
+ubuntu:15.10 指定要运行的镜像，Docker 首先从本地主机上查找镜像是否存在，如果不存在，Docker 就会从镜像仓库 Docker Hub 下载公共镜像。
+
+/bin/echo "Hello world": 在启动的容器里执行的命令
+
+以上命令完整的意思可以解释为：Docker 以 ubuntu15.10 镜像创建一个新容器，然后在容器里执行 bin/echo "Hello world"，然后输出结果。
+
