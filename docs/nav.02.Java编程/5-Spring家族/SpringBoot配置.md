@@ -1,6 +1,6 @@
-# 10.SpringBoot @ConditionalOnProperty和@ConditionalOnExpression
+# 10.SpringBoot ConditionalOnProperty和ConditionalOnExpression注解
 
-## @ConditionalOnProperty
+## 注解ConditionalOnProperty
 
 >@ConditionalOnProperty的作用是判断一个Property属性，是否符合我们的条件，符合则让该注解修饰的类或者方法生效，否则不生效.
 
@@ -11,7 +11,7 @@
 
 如果只使用@ConditionalOnProperty的name属性，那么当配置文件中只要出现xxx时(内容为空，同样也是有效的)，则该配置生效。
 
-### ConditionalOnProperty源码
+### 源码分析
 ```java
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.TYPE, ElementType.METHOD })
@@ -99,7 +99,7 @@ public class TestConfig {
 ```
 
 
-## @ConditionalOnExpression
+## 注解ConditionalOnExpression
 
 ConditionalOnExpression的判断方式是里面的表达式，执行Spel表达式，根据返回的true/false来判断是否满足条件，满足表达式则生效，如我们上面的例子，可以改成以下的样子，功能是一样的
 
