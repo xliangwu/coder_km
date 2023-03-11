@@ -3,7 +3,7 @@ home: true
 heroText: 代码驱动科技
 tagline: 编程知识体系梳理和总结
 actionText: 快速上手 →
-actionLink: /nav.01.Linux知识/
+actionLink: /nav.02.Java编程/
 ---
 
 ::: tip
