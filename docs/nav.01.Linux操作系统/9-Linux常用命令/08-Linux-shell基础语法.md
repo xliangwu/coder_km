@@ -209,7 +209,7 @@ xw80329@dev001:~$
 
 ### 字符串替换
 [Shell字符串截取](http://c.biancheng.net/view/1120.html)
-
+[linux shell 字符串操作详解 （长度，读取，替换，截取，连接，对比，删除，位置 ）](https://www.cnblogs.com/gaochsh/p/6901809.html)
 
 ## 资料
 [Shell编程](http://c.biancheng.net/shell/program/)
