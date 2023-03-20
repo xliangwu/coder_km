@@ -35,7 +35,7 @@ PyTorch的主要优点如下:
 - 便于调试：PyTorch采用动态图，可以像普通Python代码一样进行调试。不同于TensorFlow，PyTorch的报错说明通常很容易看懂。
 - 强大高效：PyTorch提供了非常丰富的模型组件，可以快速实现想法。
 
-### PyTorch vs TensorFlow
+## PyTorch vs TensorFlow
 
 PyTorch和TensorFlow的区别，可以查看下边这边文章：
 
