@@ -24,5 +24,5 @@ GPU各个卡的参数对比：
 ![](/images/nvidia-gpu-params.jpg)
 
 ## 相关文章
-- [https://www.autodl.com/docs/gpu_perf/AutoDL](GPU性能测试)
-- [https://www.techpowerup.com/gpu-specs/](GPU 参数查询)
+- [GPU性能测试](https://www.autodl.com/docs/gpu_perf/AutoDL)
+- [GPU 参数查询](https://www.techpowerup.com/gpu-specs/)
