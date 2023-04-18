@@ -18,11 +18,11 @@
 
 ## 常见的N卡型号
 ![](/images/nvidia-gpu-category.png)
-价格:(https://item.jd.com/56735960113.html#crumb-wrap)[英伟达（NVIDIA） Tesla T4 V100 A10 A40 A100 GPU深度计算加速显卡 Tesla V100 32G]
+价格:[https://item.jd.com/56735960113.html#crumb-wrap](英伟达（NVIDIA） Tesla T4 V100 A10 A40 A100 GPU深度计算加速显卡 Tesla V100 32G)
 
 GPU各个卡的参数对比：
 ![](/images/nvidia-gpu-params.jpg)
 
 ## 相关文章
-- (https://www.autodl.com/docs/gpu_perf/AutoDL)[GPU性能测试]
-- (https://www.techpowerup.com/gpu-specs/)[GPU 参数查询]
+- [https://www.autodl.com/docs/gpu_perf/AutoDL](GPU性能测试)
+- [https://www.techpowerup.com/gpu-specs/](GPU 参数查询)
