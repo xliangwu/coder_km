@@ -7,6 +7,7 @@
 
 ## Lua编程
 1. [OpenResty 最佳实践](https://moonbingbing.gitbooks.io/openresty-best-practices/content/)
+2. [Lua 入门教程](https://www.w3cschool.cn/lua/lua-tutorial.html)
 
 ## AI相关
 1. [开源GPU显存虚拟化项目，你的2080Ti还能救一下](https://zhuanlan.zhihu.com/p/391539554)
