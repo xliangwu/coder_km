@@ -17,3 +17,7 @@ Linux具有开放源码、没有版权、技术社区用户多等特点，开放
 3. 组管理和权限管理
 4. 进程管理
 5. 磁盘分区和挂载
+
+## 引用
+1. [linux-command](https://github.com/jaywcjlove/linux-command)
+2. [Linux 命令查询手册](https://wangchujiang.com/linux-command/)
