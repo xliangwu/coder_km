@@ -28,3 +28,9 @@ dev
 remotes/origin/HEAD -> origin/master
 remotes/origin/master
 ```
+
+## 4.查看分支的创建人
+将branch_A 替换成你想查看的分支的名字
+```bash
+git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n|grep branch_A
+```
