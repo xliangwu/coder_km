@@ -1,4 +1,4 @@
-# 15-k8s 修改 /dev/shm大小
+# 15. k8s 修改 /dev/shm大小
 
 ## 问题
 /dev/shm在/etc/fstab中挂载，对应tmpfs，实际使用的是内存的空间。默认情况下，/dev/shm为物理内存大小的一半。
