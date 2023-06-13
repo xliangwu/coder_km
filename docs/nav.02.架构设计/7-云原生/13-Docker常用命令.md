@@ -148,3 +148,7 @@ Options:
       --until string   Show logs before a timestamp (e.g. 2013-01-02T13:23:37) or relative (e.g. 42m for 42 minutes)
 ```
 
+  13. 清除镜像
+  ```bash
+  docker system prune -a
+  ```
