@@ -1,4 +1,4 @@
-# 03-Prometheus Metrics类型
+# 03.Prometheus Metrics类型
 Prometheus 的客户端库中提供了四种核心的指标类型。但这些类型只是在客户端库（客户端可以根据不同的数据类型调用不同的 API 接口）和在线协议中，实际在 Prometheus server 中并不对指标类型进行区分，而是简单地把这些指标统一视为无类型的时间序列。不过，将来我们会努力改变这一现状的。
 
 ## Counter（计数器）
