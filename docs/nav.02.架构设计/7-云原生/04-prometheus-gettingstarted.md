@@ -1,4 +1,4 @@
-# 04-Promethues 快速开始
+# 04.Promethues 快速开始
 
 > 译者：[詹叶](https://heisenbergye.github.io/)
 
