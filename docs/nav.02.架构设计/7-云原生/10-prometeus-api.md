@@ -1,4 +1,4 @@
-# 10-Prometheus 在 HTTP API 中使用 PromQL
+# 10.Prometheus 在 HTTP API 中使用 PromQL
 
 Prometheus 当前稳定的 HTTP API 可以通过 `/api/v1` 访问。
 
