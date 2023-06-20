@@ -1,4 +1,4 @@
-# 02-Prometheus数据模型
+# 02.Prometheus数据模型
 
 Prometheus 所有采集的监控数据均以指标（metric）的形式保存在内置的[时间序列](https://www.wikiwand.com/zh/%E6%99%82%E9%96%93%E5%BA%8F%E5%88%97)数据库当中（TSDB）：属于同一指标名称，同一标签集合的、有时间戳标记的数据流。除了存储的时间序列，Prometheus 还可以根据查询请求产生临时的、衍生的时间序列作为返回结果。
 
