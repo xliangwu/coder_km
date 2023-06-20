@@ -1,4 +1,4 @@
-# 08-Prometheus 简单示例
+# 08.Prometheus 简单示例
 
 ## 简单的时间序列选择
 
