@@ -1,4 +1,4 @@
-# 01-Prometheus 简介
+# 01.Prometheus 简介
 
 ## 什么是 Prometheus？
 
