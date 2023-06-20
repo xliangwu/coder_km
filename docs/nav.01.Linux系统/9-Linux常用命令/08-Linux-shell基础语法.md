@@ -1,4 +1,4 @@
-# 08-Linux Shell基础语法
+# 08.Linux Shell基础语法
 
 ## 1. Shell介绍
 
