@@ -1,4 +1,4 @@
-/# 12.Linux文件上传下载
+# 12.Linux文件上传下载
 
 ## 安装lrzsz
 > yum install -y lrzsz
