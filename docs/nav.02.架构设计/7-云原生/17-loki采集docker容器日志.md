@@ -1,4 +1,4 @@
-# 17-loki采集docker容器日志
+# 17.loki采集docker容器日志
 
 如何安装Loki日志采集平台，可以参考[Loki日志平台搭建](./16-loki%E6%97%A5%E5%BF%97%E5%B9%B3%E5%8F%B0%E9%83%A8%E7%BD%B2.md)
 
