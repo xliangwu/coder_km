@@ -1,4 +1,4 @@
-# 05-Promethues 安装
+# 05.Promethues 安装
 
 > 译者：[詹叶](https://heisenbergye.github.io/)
 
