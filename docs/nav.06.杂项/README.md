@@ -14,6 +14,7 @@
 
 ## AI相关
 1. [开源GPU显存虚拟化项目，你的2080Ti还能救一下](https://zhuanlan.zhihu.com/p/391539554)
+2. [AI工具集导航](https://ai.nancheng.fun/)
 
 ## Github 好玩的文章
 1.[科技爱好者周刊](https://github.com/ruanyf/weekly)
