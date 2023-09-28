@@ -24,32 +24,9 @@
 　　包含 Servlet & JSP、Spring、SpringMVC、Mybatis、Hibernate核心思想，如 IOC、AOP 等思想。SSM 更详细请转向：Spring 家族
 
 ## 2.Elasticsearch
-- Elasticsearch
-- kibana
-- 分词
-
 ## 3.分布式缓存
-- Redis
-- Google Guava 内存缓存
-
 ## 4.算法
-- 排序算法
-- 动态规划
-- 递归
-- 回溯法
-- 贪心算法
-
 ## 5.Spring家族
-- SpringCore
-- SpringBoot
-- SpringMVC
-- Spring Batch
-- Spring Integeration
-- Spring Mybatis
-- Spring Security
-
-## 6.微服务
-- Nacos
-- SpringCloud Alibaba
-- Sentinel
-- Spring Gateway
+## 6.云原生
+## 7.不错的文章
+- [货拉拉流量回放体系搭建与应用](https://mp.weixin.qq.com/s/vGIF3idnADJzA3WQmjv6kg)
