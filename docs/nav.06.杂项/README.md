@@ -21,5 +21,5 @@
 
 
 ## 友情链接
-1.[并发编程网](http://ifeve.com/)
-2.[酷壳](https://coolshell.cn/)
+1. [并发编程网](http://ifeve.com/)
+2. [酷壳](https://coolshell.cn/)
