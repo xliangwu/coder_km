@@ -23,6 +23,7 @@
 1.[科技爱好者周刊](https://github.com/ruanyf/weekly)
 
 
-## 友情链接
+## 一些不错的技术站点
 1. [并发编程网](http://ifeve.com/)
 2. [酷壳](https://coolshell.cn/)
+3. [四火的唠叨](https://www.raychase.net/allarticles)
