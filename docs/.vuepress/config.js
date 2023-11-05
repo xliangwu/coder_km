@@ -30,6 +30,14 @@ module.exports = {
             searchMaxSuggestions: 10,
             search: true,
         }],
+        ['@vssue/vuepress-plugin-vssue', {
+            platform: 'github',
+            owner: 'xliangwu',
+            repo: 'coder_km',
+            clientId: '5890b016f86cb83a7e3b',
+            clientSecret: '493d4e3498a4bbd10d6f164d345ec09c24a22ec1',
+            autoCreateIssue: true
+        }],
     ],
     themeConfig: {
         logo: '/images/code.png',

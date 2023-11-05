@@ -1,15 +1,15 @@
 # 01.个人书单
 
-## Java编程
+## Java相关的技术文章
 1. [Spring Boot 进阶笔记](http://blog.nowcode.cn/pdf/Spring%20Boot%20%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0.pdf)
 
 2. [Learning the bash Shell 2nd Ed 1998.chm](https://blog.nowcode.cn/pdf/Learning%20the%20bash%20Shell%202nd%20Ed%201998.chm)
 
-## Lua编程
+## Lua相关的技术文章
 1. [OpenResty 最佳实践](https://moonbingbing.gitbooks.io/openresty-best-practices/content/)
 2. [Lua 入门教程](https://www.w3cschool.cn/lua/lua-tutorial.html)
 
-## C/C++变成
+## C/C++相关的技术文章
 1. [C++ 教程](https://www.w3cschool.cn/cpp/cpp-intro.html)
 
 ## AI相关
