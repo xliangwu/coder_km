@@ -27,3 +27,4 @@
 1. [并发编程网](http://ifeve.com/)
 2. [酷壳](https://coolshell.cn/)
 3. [四火的唠叨](https://www.raychase.net/allarticles)
+4. [货拉拉流量回放体系搭建与应用](https://mp.weixin.qq.com/s/vGIF3idnADJzA3WQmjv6kg)
