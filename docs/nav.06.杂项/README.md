@@ -8,6 +8,8 @@
 ## Lua相关的技术文章
 1. [OpenResty 最佳实践](https://moonbingbing.gitbooks.io/openresty-best-practices/content/)
 2. [Lua 入门教程](https://www.w3cschool.cn/lua/lua-tutorial.html)
+3. [LUA简明教程](https://coolshell.cn/articles/10739.html)
+4. [Lua 5.1 参考手册](https://www.codingnow.com/2000/download/lua_manual.html)
 
 ## C/C++相关的技术文章
 1. [C++ 教程](https://www.w3cschool.cn/cpp/cpp-intro.html)
