@@ -2,6 +2,8 @@
 
 YAML 是专门用来写配置文件的语言，非常简洁和强大，远比 JSON 格式方便。
 
+[YAML基础语法](https://cloud.tencent.com/developer/article/1728595)
+
 几个不错的文章
 
 - [YAML 语言教程](https://www.ruanyifeng.com/blog/2016/07/yaml.html?f=tt)
