@@ -5,5 +5,5 @@
 Q1. [How to gracefully avoid divide by zero in Prometheus](https://stackoverflow.com/questions/47056557/how-to-gracefully-avoid-divide-by-zero-in-prometheus)
 > 解决rate等函数显示NAN的问题
 
-!2. [PromQL 查询之 rate 函数的使用](https://cloud.tencent.com/developer/article/1891190)
+Q2. [PromQL 查询之 rate 函数的使用](https://cloud.tencent.com/developer/article/1891190)
 > 解释rate的函数原理
