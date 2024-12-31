@@ -23,6 +23,10 @@
 GPU各个卡的参数对比：
 ![](/images/nvidia-gpu-params.jpg)
 
+## 架构代号
+
 ## 相关文章
 - [GPU性能测试](https://www.autodl.com/docs/gpu_perf/AutoDL)
 - [GPU 参数查询](https://www.techpowerup.com/gpu-specs/)
+- [NVIDIA GPU的架构代号](https://blog.csdn.net/shaojie_wang/article/details/121117277)
+- [英伟达产品系列分类、架构、数据中心GPU所有型号及参数汇总](https://www.zhihu.com/tardis/zm/art/671412359?source_id=1005)
