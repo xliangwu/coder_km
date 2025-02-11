@@ -25,7 +25,7 @@ GPU各个卡的参数对比：
 
 ## 架构代号
 | 版本      | 系列号 | 显卡型号  |
-| ----------- | ----------- |
+| ----------- | ----------- | ---------- |
 | 麦克斯韦 Maxwell（CUDA 6~CUDA 11）      | SM50 or SM_50, compute_50       | Tesla/Quadro M 系列 | 
 | 麦克斯韦 Maxwell（CUDA 6~CUDA 11）      | SM52 or SM_52, compute_52       | Quadro M6000 , GeForce 900, GTX-970, GTX-980, GTX Titan X | 
 | 麦克斯韦 Maxwell（CUDA 6~CUDA 11）      | SM53 or SM_53, compute_53       | egra (Jetson) TX1 / Tegra X1, Drive CX, Drive PX, Jetson Nano | 
