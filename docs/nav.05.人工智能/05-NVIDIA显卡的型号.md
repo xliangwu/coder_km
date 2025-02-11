@@ -24,6 +24,18 @@ GPU各个卡的参数对比：
 ![](/images/nvidia-gpu-params.jpg)
 
 ## 架构代号
+| 版本      | 系列号 | 显卡型号  |
+| ----------- | ----------- |
+| 麦克斯韦 Maxwell（CUDA 6~CUDA 11）      | SM50 or SM_50, compute_50       | Tesla/Quadro M 系列 | 
+| 麦克斯韦 Maxwell（CUDA 6~CUDA 11）      | SM52 or SM_52, compute_52       | Quadro M6000 , GeForce 900, GTX-970, GTX-980, GTX Titan X | 
+| 麦克斯韦 Maxwell（CUDA 6~CUDA 11）      | SM53 or SM_53, compute_53       | egra (Jetson) TX1 / Tegra X1, Drive CX, Drive PX, Jetson Nano | 
+| 帕斯卡 Pascal (CUDA 8 ~今)              | SM60 or SM_60, compute_60       | Quadro GP100, Tesla P100, DGX-1 (Generic Pascal) |
+| 帕斯卡 Pascal (CUDA 8 ~今)              | SM61 or SM_61, compute_61       | GTX 1080, GTX 1070, GTX 1060, GTX 1050, GTX 1030, Titan Xp, Tesla P40, Tesla P4, Discrete GPU on the NVIDIA Drive PX2 |
+| 伏特 Volta (CUDA 9 ~今)                 | SM70 or SM_70, compute_70       | DGX-1 with Volta, Tesla V100, GTX 1180 (GV104), Titan V, Quadro GV100 |
+| 伏特 Volta (CUDA 9 ~今)                 | SM70 or SM_70, compute_70       | DGX-1 with Volta, Tesla V100, GTX 1180 (GV104), Titan V, Quadro GV100 |
+| 图灵Turing                              | SM75 or SM_75, compute_75       | GTX/RTX Turing – GTX 1660 Ti, RTX 2060, RTX 2070, RTX 2080, Titan RTX, Quadro RTX 4000, Quadro RTX 5000, Quadro RTX 6000, Quadro RTX 8000, Quadro T1000/T2000, Tesla T4 |
+| 安培Ampere                               | SM80 or SM_80, compute_80       | NVIDIA DGX-A100 |
+| 安培Ampere                               | SM86 or SM_86, compute_86       | Tesla GA10x, RTX Ampere – RTX 3080, GA102 – RTX 3090, RTX A6000, RTX A40 |
 
 ## 相关文章
 - [GPU性能测试](https://www.autodl.com/docs/gpu_perf/AutoDL)
