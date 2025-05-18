@@ -13,6 +13,7 @@ if [[ "$current_commit_id" == "$new_commit_id" ]];then
 fi
 
 echo "$(date) [INFO] start to buiild static web sites"
+export NODE_OPTIONS=--openssl-legacy-provider
 yarn docs:build &
 wait
 echo "$(date) [INFO] finish to buiild static web sites"
