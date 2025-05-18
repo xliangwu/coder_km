@@ -12,10 +12,10 @@ Triton的入门可以参考文章 [模型推理服务化框架Triton保姆式教
 
 | #     | 文章  | 备注 |
 | ---   | ---   | --- |
-| 01    | [Triton HelloWord](./25.triton/01.triton-helloworld.md)         |  Triton快速入门。通过一个示例，快速了解Triton怎么启动     |
-| 02    | [Model-Repository](./25.triton/02.Model-Repository.md)          |  模型结构  |
-| 03    | [部署一个模型](./25.triton/03.Deploy-models-using-Triton.md)     | 通过Triton快速部署一个图片识别模型 |
-| 04    | [模型加载策略](./25.triton/04.Model-Management.md)               | 模型加载策略|
+| 01    | [Triton HelloWord](./01.triton-helloworld.md)         |  Triton快速入门。通过一个示例，快速了解Triton怎么启动     |
+| 02    | [Model-Repository](./02.Model-Repository.md)          |  模型结构  |
+| 03    | [部署一个模型](./03.Deploy-models-using-Triton.md)     | 通过Triton快速部署一个图片识别模型 |
+| 04    | [模型加载策略](./04.Model-Management.md)               | 模型加载策略|
 
 # 2. 文章
 1. [what-is-temperature](https://lukesalamone.github.io/posts/what-is-temperature/)

@@ -21,3 +21,4 @@ cp -R /home/xw80329/apps/coder_km/docs/.vuepress/dist/* /home/xw80329/coder_km
 echo "$(date) [INFO] sync static web sites"
 
 ## rsync -raP /root/apps/code_km/coder_km/docs/.vuepress/dist/ <>:<>:/home/xw80329/coder_km
+#export NODE_OPTIONS=--openssl-legacy-provider
