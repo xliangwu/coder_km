@@ -22,5 +22,3 @@ Triton的入门可以参考文章 [模型推理服务化框架Triton保姆式教
 > Higher temperatures make the model more “creative” which can be useful when generating prose, for example. Lower temperatures make the model more “confident” which can be useful in applications like question answering.
 采样参数,较高的值，如0.8会使输出更随机，而较低的值，如0.2会使其更加集中和确定性。
 
-<br><br>
-<Vssue :title="$title" />
