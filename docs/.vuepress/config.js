@@ -35,7 +35,7 @@ module.exports = {
             owner: 'xliangwu',
             repo: 'coder_km',
             clientId: '5890b016f86cb83a7e3b',
-            clientSecret: '493d4e3498a4bbd10d6f164d345ec09c24a22ec1',
+            clientSecret: '2f9a25db8e2e161d19e5fca0b69486a0544de7bd',
             autoCreateIssue: true
         }],
     ],
