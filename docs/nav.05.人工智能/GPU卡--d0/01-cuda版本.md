@@ -53,3 +53,4 @@ Tue Mar 14 23:34:03 2023
 
 # 4.其他资料
 [显卡和cuda版本、cuda驱动对应关系](https://raychiu.blog.csdn.net/article/details/121649361?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-121649361-blog-124540449.pc_relevant_landingrelevant&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-121649361-blog-124540449.pc_relevant_landingrelevant&utm_relevant_index=1)
+[NVIDIA显卡驱动、CUDA、cuDNN 和 TensorRT 版本匹配指南](https://blog.csdn.net/byxdaz/article/details/146133963)
